@@ -9,7 +9,7 @@ import { NavbarComponent } from './pages/home/components/navbar/navbar.component
 import { RouterModule } from '@angular/router';
 import { UsersComponent } from './pages/home/components/users/users.component';
 import { AppRoutingModule } from './app-routing.module';
-import { WelcomeComponent } from './pages/home/components/welcome/welcome.component';
+import { TableComponent } from './pages/home/components/table/table.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TodoListComponent } from './pages/home/pages/todo-list/todo-list.component';
 
@@ -21,7 +21,7 @@ import { TodoListComponent } from './pages/home/pages/todo-list/todo-list.compon
     HomeComponent,
     NavbarComponent,
     UsersComponent,
-    WelcomeComponent,
+    TableComponent,
     TodoListComponent
   ],
   imports: [

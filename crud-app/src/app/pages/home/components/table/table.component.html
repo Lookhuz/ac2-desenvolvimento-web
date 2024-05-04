@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div>
+        <h2 class="text-center">Total de Usuários: {{ usersCount }}</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Função</th>
+              <th scope="col">Quantidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let userFunction of usersByFunction">
+              <td>{{ userFunction.function }}</td>
+              <td>{{ userFunction.count }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
