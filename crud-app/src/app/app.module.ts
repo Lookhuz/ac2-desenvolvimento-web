@@ -7,7 +7,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './pages/home/components/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
-import { UsersComponent } from './pages/home/components/users/users.component';
+import { UsersPageComponent } from './pages/home/components/users-page/usersPage.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TableComponent } from './pages/home/components/table/table.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,7 +20,7 @@ import { TodoListComponent } from './pages/home/pages/todo-list/todo-list.compon
     SignupComponent,
     HomeComponent,
     NavbarComponent,
-    UsersComponent,
+    UsersPageComponent,
     TableComponent,
     TodoListComponent
   ],
