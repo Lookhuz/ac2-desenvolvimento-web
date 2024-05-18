@@ -6,17 +6,22 @@ import { UsersPageComponent } from './pages/home/components/users-page/usersPage
 import { TableComponent } from './pages/home/components/table/table.component';
 import { TodoListComponent } from './pages/home/pages/todo-list/todo-list.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { UsersComponent } from './users/users.component';
+import { EditUserComponent } from './pages/edit-user/edit-user.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "/login", pathMatch: 'full'},
   {path: "login", component: HomeComponent},
   {path: "signup", component: SignupComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+
   {
     path: "app", component: HomeComponent,
     children: [
       {path: "", component: TableComponent},
       {path: "users", component: UsersPageComponent},
-      {path: "todo-list", component: TodoListComponent}
+      {path: "todo-list", component: TodoListComponent},
+      { path: 'pages/edit-user', component: EditUserComponent }
     ]
   }
 ]
@@ -28,3 +33,4 @@ const routes: Routes = [
 })
 
 export class AppRoutingModule { }
+

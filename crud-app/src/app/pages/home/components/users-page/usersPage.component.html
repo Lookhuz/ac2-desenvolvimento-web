@@ -21,7 +21,7 @@
             <td>{{ user.email }}</td>
             <td>{{ user.funcao }}</td>
             <td>
-              <button class="btn btn-info" (click)="editUser(user)">Edit</button>
+              <button class="btn btn-info" [routerLink]="['/app/pages/edit-user']">Edit</button>
               <button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>
             </td>
           </tr>
