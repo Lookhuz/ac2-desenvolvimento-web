@@ -4,10 +4,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { UsersPageComponent } from './pages/home/components/users-page/usersPage.component';
 import { TableComponent } from './pages/home/components/table/table.component';
-import { TodoListComponent } from './pages/home/pages/todo-list/todo-list.component';
 import { SignupComponent } from './pages/signup/signup.component';
-import { UsersComponent } from './users/users.component';
 import { EditUserComponent } from './pages/edit-user/edit-user.component';
+import { AddUsersComponent } from './pages/add-users/add-users.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "/login", pathMatch: 'full'},
@@ -20,8 +19,8 @@ const routes: Routes = [
     children: [
       {path: "", component: TableComponent},
       {path: "users", component: UsersPageComponent},
-      {path: "todo-list", component: TodoListComponent},
-      { path: 'pages/edit-user', component: EditUserComponent }
+      {path: "pages/edit-user", component: EditUserComponent },
+      {path: "pages/add-users", component: AddUsersComponent}
     ]
   }
 ]

@@ -13,6 +13,7 @@ import { TableComponent } from './pages/home/components/table/table.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TodoListComponent } from './pages/home/pages/todo-list/todo-list.component';
 import { EditUserComponent } from './pages/edit-user/edit-user.component';
+import { AddUsersComponent } from './pages/add-users/add-users.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EditUserComponent } from './pages/edit-user/edit-user.component';
     UsersPageComponent,
     TableComponent,
     TodoListComponent,
-    EditUserComponent
+    EditUserComponent,
+    AddUsersComponent
   ],
   imports: [
     BrowserModule,
