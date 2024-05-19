@@ -25,7 +25,7 @@ export class EditUserComponent implements OnInit {
     const existingUser = {
       name: 'Juliana',
       email: 'juliana@example.com',
-      role: 'BE',
+      role: 'Tech Lead',
       password: 'password123'
     };
 
