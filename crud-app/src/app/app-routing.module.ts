@@ -10,10 +10,8 @@ import { AddUsersComponent } from './pages/add-users/add-users.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "/login", pathMatch: 'full'},
-  {path: "login", component: HomeComponent},
+  {path: "login", component: LoginComponent},
   {path: "signup", component: SignupComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-
   {
     path: "app", component: HomeComponent,
     children: [
